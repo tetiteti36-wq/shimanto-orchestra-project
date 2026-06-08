@@ -52,7 +52,7 @@ dialog p {
 
 .project-card {
   padding-top: 230px;
-  min-height: 570px;
+  min-height: 1040px;
   overflow: hidden;
 }
 
@@ -96,6 +96,49 @@ dialog p {
   object-position: 84% 88%;
 }
 
+.project-info {
+  margin: 24px 0 30px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  border-bottom: 1px solid rgba(255, 255, 255, .18);
+}
+
+.project-info div {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 12px;
+  padding: 7px 0;
+}
+
+.project-info dt {
+  color: var(--bright);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.project-info dd {
+  margin: 0;
+  color: #e4eef3;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.project-card h4 {
+  margin: 0 0 15px;
+  color: #fff;
+  font: 700 19px/1.7 var(--serif);
+  letter-spacing: .04em;
+}
+
+.project-card .project-description {
+  max-width: none;
+  margin: 0;
+  color: #b8c8d1;
+  font-size: 16px;
+  line-height: 2;
+}
+
 @media (max-width: 760px) {
   .hero-lead {
     font-size: 18px;
@@ -111,7 +154,13 @@ dialog p {
   }
 
   .project-card {
-    min-height: 550px;
+    min-height: auto;
     padding-top: 225px;
+    padding-bottom: 50px;
+  }
+
+  .project-info dd,
+  .project-card .project-description {
+    font-size: 16px;
   }
 }

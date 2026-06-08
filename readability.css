@@ -1,4 +1,8 @@
 /* Readability adjustments for supporting and explanatory copy. */
+.quote-section {
+  background: linear-gradient(135deg, #f1f9fa 0%, #e7f5f7 52%, #f7fbfa 100%);
+}
+
 .hero-lead {
   font-size: 23px;
   line-height: 1.85;

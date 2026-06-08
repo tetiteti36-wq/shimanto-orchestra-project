@@ -1,40 +1,40 @@
 /* Readability adjustments for supporting and explanatory copy. */
 .hero-lead {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .intro-body {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 2.05;
 }
 
 .section-heading > p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .project-card > p:last-of-type {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.95;
 }
 
 .quote-section p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .support-heading > p:last-child {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .support-card small {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .support-note {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .committee-message > p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2.05;
 }
 
@@ -47,12 +47,58 @@ footer {
 }
 
 dialog p {
-  font-size: 15px;
+  font-size: 17px;
+}
+
+.project-card {
+  padding-top: 230px;
+  min-height: 570px;
+  overflow: hidden;
+}
+
+.project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 195px;
+  object-fit: cover;
+  filter: saturate(.8) contrast(1.08);
+  transition: transform .5s ease, filter .5s ease;
+}
+
+.project-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent, #0b263e);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.035);
+  filter: saturate(1) contrast(1.08);
+}
+
+.flyer-crop {
+  object-fit: cover;
+  transform: scale(1.02);
+}
+
+.crop-community {
+  object-position: 83% 22%;
+}
+
+.crop-school {
+  object-position: 82% 60%;
+}
+
+.crop-workshop {
+  object-position: 84% 88%;
 }
 
 @media (max-width: 760px) {
   .hero-lead {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.9;
   }
 
@@ -61,6 +107,11 @@ dialog p {
   .quote-section p,
   .support-heading > p:last-child,
   .committee-message > p {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .project-card {
+    min-height: 550px;
+    padding-top: 225px;
   }
 }

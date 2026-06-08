@@ -3,6 +3,19 @@
   background: linear-gradient(135deg, #f1f9fa 0%, #e7f5f7 52%, #f7fbfa 100%);
 }
 
+.hero {
+  min-height: 680px;
+  height: 88vh;
+}
+
+.hero-copy {
+  padding-top: 19vh;
+}
+
+.projects {
+  padding-top: 95px;
+}
+
 .hero-lead {
   font-size: 23px;
   line-height: 1.85;
@@ -302,6 +315,20 @@ dialog p {
     height: 43vh;
     bottom: -4vh;
     opacity: .48;
+  }
+
+  .hero {
+    min-height: 690px;
+    height: auto;
+  }
+
+  .hero-copy {
+    padding-top: 130px;
+    padding-bottom: 180px;
+  }
+
+  .projects {
+    padding-top: 70px;
   }
 
   .intro-body,

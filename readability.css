@@ -79,23 +79,6 @@ dialog p {
   filter: saturate(1) contrast(1.08);
 }
 
-.flyer-crop {
-  object-fit: cover;
-  transform: scale(1.02);
-}
-
-.crop-community {
-  object-position: 83% 22%;
-}
-
-.crop-school {
-  object-position: 82% 60%;
-}
-
-.crop-workshop {
-  object-position: 84% 88%;
-}
-
 .project-info {
   margin: 24px 0 30px;
   padding: 18px 0;

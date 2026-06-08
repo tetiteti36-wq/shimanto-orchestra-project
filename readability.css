@@ -1,6 +1,40 @@
 /* Readability adjustments for supporting and explanatory copy. */
 .hero-lead {
-  font-size: 20px;
+  font-size: 23px;
+  line-height: 1.85;
+  max-width: 690px;
+  color: rgba(255, 255, 255, .9);
+}
+
+.hero h1 {
+  max-width: 680px;
+  font-size: clamp(44px, 5.5vw, 76px);
+  line-height: 1.4;
+}
+
+.hero h1 br {
+  display: block;
+}
+
+.hero-visual {
+  right: -2vw;
+  bottom: 4vh;
+  width: 52vw;
+  height: 69vh;
+  opacity: .84;
+}
+
+.orchestra-space-image {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 48% 65%, rgba(41, 190, 227, .2), transparent 42%),
+    linear-gradient(90deg, #07172a 0%, rgba(7, 23, 42, .35) 24%, rgba(7, 23, 42, .08) 65%, #07172a 100%),
+    linear-gradient(0deg, #07172a 0%, transparent 40%, #07172a 100%),
+    url("orchestra-concert.png") center / cover no-repeat;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, rgba(0, 0, 0, .8) 55%, transparent 82%);
+  mask-image: radial-gradient(ellipse at center, #000 35%, rgba(0, 0, 0, .8) 55%, transparent 82%);
+  filter: saturate(.75) contrast(1.05);
 }
 
 .intro-body {
@@ -124,8 +158,22 @@ dialog p {
 
 @media (max-width: 760px) {
   .hero-lead {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.9;
+  }
+
+  .hero h1 {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 1.45;
+  }
+
+  .hero-visual {
+    right: -22vw;
+    width: 110vw;
+    height: 43vh;
+    bottom: -4vh;
+    opacity: .48;
   }
 
   .intro-body,

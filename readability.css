@@ -160,6 +160,130 @@ dialog p {
   line-height: 2;
 }
 
+.project-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  background: transparent;
+}
+
+.project-card.featured {
+  grid-column: 1 / -1;
+  min-height: auto;
+  padding: 420px 64px 60px;
+  display: grid;
+  grid-template-columns: minmax(280px, .8fr) minmax(420px, 1.2fr);
+  column-gap: 70px;
+}
+
+.project-card.featured .project-image {
+  height: 370px;
+}
+
+.project-card.featured .project-icon,
+.project-card.featured .project-type,
+.project-card.featured h3,
+.project-card.featured h4 {
+  grid-column: 1;
+}
+
+.project-card.featured .project-info,
+.project-card.featured .project-description {
+  grid-column: 2;
+}
+
+.project-card.featured .project-info {
+  grid-row: 1 / span 3;
+  margin-top: 0;
+}
+
+.project-card.featured h3 {
+  font-size: 34px;
+}
+
+.project-card.featured h4 {
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+.main-event-credits {
+  grid-column: 1 / -1;
+  margin-top: 48px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, .22);
+}
+
+.main-event-credits dl {
+  margin: 0;
+}
+
+.main-event-credits dl div {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 14px;
+  margin-bottom: 9px;
+}
+
+.main-event-credits dt {
+  color: var(--bright);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.main-event-credits dd {
+  margin: 0;
+  color: #c8d7de;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.ticket-contact {
+  margin: 30px 0 0;
+  padding: 24px 28px;
+  border: 1px solid rgba(75, 215, 240, .5);
+  background: rgba(5, 25, 43, .35);
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.ticket-contact span {
+  color: #a9c4cf;
+  font-size: 13px;
+}
+
+.ticket-contact strong {
+  color: #fff;
+  font: 700 18px var(--serif);
+}
+
+.ticket-contact a {
+  margin-left: auto;
+  color: var(--bright);
+  font: 800 26px var(--serif);
+  letter-spacing: .05em;
+}
+
+.project-grid > .project-card:not(.featured) {
+  min-height: auto;
+  padding: 225px 28px 42px;
+}
+
+.project-grid > .project-card:not(.featured) h3 {
+  font-size: 21px;
+}
+
+.project-grid > .project-card:not(.featured) .project-info div {
+  grid-template-columns: 44px 1fr;
+}
+
+.project-grid > .project-card:not(.featured) .project-info dd {
+  font-size: 14px;
+}
+
+.project-grid > .project-card:not(.featured) .project-description {
+  font-size: 15px;
+}
+
 @media (max-width: 760px) {
   .hero-lead {
     font-size: 19px;
@@ -192,6 +316,43 @@ dialog p {
     min-height: auto;
     padding-top: 225px;
     padding-bottom: 50px;
+  }
+
+  .project-grid {
+    display: block;
+  }
+
+  .project-card.featured {
+    display: block;
+    padding: 275px 25px 45px;
+  }
+
+  .project-card.featured .project-image {
+    height: 240px;
+  }
+
+  .project-card.featured h3 {
+    font-size: 27px;
+  }
+
+  .main-event-credits dl div {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .main-event-credits dt {
+    margin-bottom: 4px;
+  }
+
+  .ticket-contact {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ticket-contact a {
+    margin-left: 0;
+    font-size: 24px;
   }
 
   .project-info dd,

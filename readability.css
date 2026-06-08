@@ -1,0 +1,66 @@
+/* Readability adjustments for supporting and explanatory copy. */
+.hero-lead {
+  font-size: 18px;
+}
+
+.intro-body {
+  font-size: 17px;
+  line-height: 2.05;
+}
+
+.section-heading > p {
+  font-size: 16px;
+}
+
+.project-card > p:last-of-type {
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+.quote-section p {
+  font-size: 16px;
+}
+
+.support-heading > p:last-child {
+  font-size: 16px;
+}
+
+.support-card small {
+  font-size: 13px;
+}
+
+.support-note {
+  font-size: 13px;
+}
+
+.committee-message > p {
+  font-size: 16px;
+  line-height: 2.05;
+}
+
+.names small {
+  font-size: 12px;
+}
+
+footer {
+  font-size: 12px;
+}
+
+dialog p {
+  font-size: 15px;
+}
+
+@media (max-width: 760px) {
+  .hero-lead {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .intro-body,
+  .project-card > p:last-of-type,
+  .quote-section p,
+  .support-heading > p:last-child,
+  .committee-message > p {
+    font-size: 16px;
+  }
+}
